@@ -89,7 +89,7 @@ img {
 .accent { color: var(--gold-primary); }
 
 /* ═══════════════════════════════════════════
-   NAVBAR
+   NAVIGATION BAR
 ═══════════════════════════════════════════ */
 .navbar {
   position: fixed;
@@ -1010,4 +1010,200 @@ img {
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .about-facts { grid-template-columns: 1fr; }
   .highlights-card { display: flex; flex-direction: column; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   SKILLS SECTION
+═══════════════════════════════════════════════════════ */
+.skills {
+  background: var(--bg-primary);
+}
+
+/* ── Core specialization cards ── */
+.core-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.spec-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-top: 2px solid var(--gold-primary);
+  border-radius: 14px;
+  padding: 26px 22px;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--ease-smooth), box-shadow var(--ease-smooth), border-color var(--ease-smooth);
+}
+.spec-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(245,166,35,0.06), transparent 65%);
+  opacity: 0;
+  transition: opacity var(--ease-smooth);
+  pointer-events: none;
+}
+.spec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45), 0 0 28px rgba(245,166,35,0.07);
+  border-color: var(--border-mid);
+}
+.spec-card:hover::after { opacity: 1; }
+
+.spec-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 11px;
+  background: rgba(245,166,35,0.09);
+  border: 1px solid rgba(245,166,35,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.spec-icon i {
+  color: var(--gold-primary);
+  font-size: 1.1rem;
+}
+.spec-card h3 {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.spec-card p {
+  font-size: 0.855rem;
+  color: var(--text-secondary);
+  line-height: 1.68;
+}
+
+/* ── Skill category grid ── */
+.skill-categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+/* top 3 cards: each takes 2 of 6 columns */
+.skill-cat {
+  grid-column: span 2;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 20px 18px;
+  transition: border-color var(--ease-smooth), transform var(--ease-smooth);
+}
+.skill-cat:hover {
+  border-color: var(--border-mid);
+  transform: translateY(-2px);
+}
+
+/* bottom 2 cards: each takes 3 of 6 columns */
+.skill-cat-wide {
+  grid-column: span 3;
+}
+
+.skill-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.skill-cat-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  background: rgba(245,166,35,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.skill-cat-icon i {
+  color: var(--gold-primary);
+  font-size: 0.78rem;
+}
+.skill-cat-header h4 {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.1px;
+}
+
+/* ── Skill chips ── */
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 11px;
+  border-radius: 20px;
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  cursor: default;
+  transition: border-color var(--ease-fast), color var(--ease-fast), background var(--ease-fast), transform var(--ease-fast);
+  letter-spacing: 0.15px;
+  white-space: nowrap;
+}
+.chip:hover {
+  border-color: var(--border-mid);
+  color: var(--text-secondary);
+  transform: translateY(-1px);
+}
+
+/* Gold / primary chip */
+.chip-gold {
+  background: rgba(245, 166, 35, 0.07);
+  border-color: rgba(245, 166, 35, 0.28);
+  color: var(--gold-secondary);
+}
+.chip-gold:hover {
+  background: rgba(245, 166, 35, 0.14);
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+  transform: translateY(-1px);
+}
+
+/* ── Skills Responsive ── */
+@media (max-width: 960px) {
+  .core-specs {
+    grid-template-columns: 1fr 1fr;
+  }
+  .core-specs .spec-card:last-child {
+    grid-column: span 2;
+  }
+  .skill-categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .skill-cat       { grid-column: span 2; }
+  .skill-cat-wide  { grid-column: span 2; }
+}
+
+@media (max-width: 600px) {
+  .core-specs {
+    grid-template-columns: 1fr;
+  }
+  .core-specs .spec-card:last-child {
+    grid-column: span 1;
+  }
+  .skill-categories {
+    grid-template-columns: 1fr;
+  }
+  .skill-cat,
+  .skill-cat-wide { grid-column: span 1; }
 }
