@@ -1669,3 +1669,200 @@ img {
   .edu-pillars { grid-template-columns: 1fr; }
   .edu-pillars .pillar-card:last-child { grid-column: span 1; }
 }
+
+/* ═══════════════════════════════════════════════════════
+   TESTIMONIALS SECTION
+═══════════════════════════════════════════════════════ */
+.testimonials {
+  background: var(--bg-secondary);
+}
+
+.section-subtext {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 7px;
+  letter-spacing: 0.2px;
+}
+
+/* Track: flex row for multiple cards if added later */
+.testimonials-track {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 820px;
+  margin: 0 auto 28px;
+}
+
+/* ── Testimonial card ── */
+.testimonial-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  padding: 44px 44px 32px;
+  overflow: hidden;
+  transition: box-shadow var(--ease-smooth), border-color var(--ease-smooth);
+}
+.testimonial-card:hover {
+  border-color: var(--border-mid);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 30px rgba(245,166,35,0.05);
+}
+
+/* Decorative large quote mark */
+.testi-quote-mark {
+  position: absolute;
+  top: -10px;
+  left: 28px;
+  font-family: Georgia, serif;
+  font-size: 9rem;
+  line-height: 1;
+  color: var(--gold-primary);
+  opacity: 0.07;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Quote text */
+.testi-text {
+  font-size: 0.975rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
+}
+.testi-text strong {
+  color: var(--gold-secondary);
+  font-weight: 600;
+}
+
+/* Footer: person info + LinkedIn badge */
+.testi-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Person */
+.testi-person {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testi-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(245,166,35,0.1);
+  border: 2px solid rgba(245,166,35,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.testi-person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.testi-name {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.testi-title {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+.testi-relation {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--gold-primary);
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+}
+.testi-relation i { font-size: 0.65rem; }
+
+/* LinkedIn badge button */
+.linkedin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 119, 181, 0.1);
+  border: 1px solid rgba(0, 119, 181, 0.35);
+  color: #5BA4CF;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background var(--ease-fast), border-color var(--ease-fast), transform var(--ease-bounce);
+  white-space: nowrap;
+}
+.linkedin-badge i { font-size: 1rem; }
+.linkedin-badge:hover {
+  background: rgba(0, 119, 181, 0.2);
+  border-color: rgba(0, 119, 181, 0.6);
+  color: #7EC8E3;
+  transform: translateY(-2px);
+}
+
+/* ── LinkedIn CTA bar ── */
+.testi-linkedin-cta {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.testi-cta-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 20px 26px;
+  flex-wrap: wrap;
+}
+.testi-li-icon {
+  font-size: 2rem;
+  color: #0077B5;
+  flex-shrink: 0;
+}
+.testi-cta-text {
+  flex: 1;
+  min-width: 200px;
+}
+.testi-cta-text p {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+.testi-cta-text span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .testimonial-card { padding: 32px 20px 24px; }
+  .testi-quote-mark { font-size: 6rem; left: 14px; }
+  .testi-footer { flex-direction: column; align-items: flex-start; }
+  .testi-cta-inner { flex-direction: column; text-align: center; }
+  .testi-li-icon { align-self: center; }
+  .testi-cta-text { text-align: center; }
+}
