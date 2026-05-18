@@ -1425,8 +1425,8 @@ img {
   margin-bottom: 18px;
 }
 .exp-bullets li {
-  display: flex;
-  gap: 10px;
+  position: relative;
+  padding-left: 16px;
   font-size: 0.875rem;
   color: var(--text-secondary);
   line-height: 1.7;
@@ -1435,8 +1435,9 @@ img {
   content: '▸';
   color: var(--gold-primary);
   font-size: 0.7rem;
-  margin-top: 4px;
-  flex-shrink: 0;
+  position: absolute;
+  left: 0;
+  top: 5px;
 }
 .exp-bullets strong {
   color: var(--text-primary);
