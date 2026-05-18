@@ -654,7 +654,7 @@
         <span class="section-tag">Social Proof</span>
         <h2 class="section-title">What People <span class="accent">Say</span></h2>
         <div class="section-divider"><span></span></div>
-        
+
         <p class="section-subtext">Recommendations from colleagues &amp; managers — verified on LinkedIn</p>
       </div>
 
@@ -709,9 +709,270 @@
 
     </div>
   </section>
-  <section id="projects"       style="min-height:100px"></section>
-  <section id="certifications" style="min-height:100px"></section>
-  <section id="contact"        style="min-height:100px"></section>
+  <!-- ═══════════════════════════════════════════
+       PROJECTS SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Selected <span class="accent">Projects</span></h2>
+        <div class="section-divider"><span></span></div>
+      </div>
+
+      <!-- Featured 2-column projects -->
+      <div class="projects-featured">
+
+        <!-- Mini GPT -->
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-badges">
+              <span class="project-badge">LLM Research</span>
+              <span class="project-date"><i class="far fa-calendar-alt"></i> Dec 2025 – Feb 2026</span>
+            </div>
+            <a href="https://github.com/cherry-mittal/GPT-from-scratch"
+               class="project-gh-icon" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h3 class="project-title">Mini GPT — Transformer from Scratch</h3>
+          <p class="project-desc">Built a GPT-style autoregressive language model entirely from first principles using PyTorch — multi-head self-attention, layer normalization, and custom tokenizer — hitting <span class="impact">1.47</span> cross-entropy loss on TinyShakespeare.</p>
+          <ul class="project-bullets">
+            <li>Implemented full Transformer architecture from scratch: multi-head attention, positional encoding, feed-forward layers.</li>
+            <li>Optimised GPU memory utilisation by <span class="impact">25%</span> through vectorized operations and efficient text ingestion pipeline.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="skill-chips">
+              <span class="chip chip-gold">PyTorch</span>
+              <span class="chip chip-gold">CUDA</span>
+              <span class="chip">Python</span>
+              <span class="chip">Transformers</span>
+              <span class="chip">NLP</span>
+            </div>
+            <a href="https://github.com/cherry-mittal/GPT-from-scratch"
+               class="btn-github" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- PaliGemma -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-top">
+            <div class="project-badges">
+              <span class="project-badge project-badge--alt">Multimodal AI</span>
+              <span class="project-date"><i class="far fa-calendar-alt"></i> May – Jun 2025</span>
+            </div>
+            <a href="https://github.com/cherry-mittal/vlm_system"
+               class="project-gh-icon" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h3 class="project-title">Multimodal Classifier — PaliGemma Fine-Tuning</h3>
+          <p class="project-desc">Fine-tuned Google's PaliGemma vision-language model using LoRA for domain-specific image-text classification — significant F1 gains while training less than <span class="impact">1%</span> of total model parameters.</p>
+          <ul class="project-bullets">
+            <li>Achieved <span class="impact">12%</span> F1-score improvement via LoRA/PEFT — parameter-efficient fine-tuning at scale.</li>
+            <li>Cut training wall-clock time by <span class="impact">35%</span> using Hugging Face Accelerate with optimised data loading.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="skill-chips">
+              <span class="chip chip-gold">LoRA / PEFT</span>
+              <span class="chip chip-gold">Hugging Face</span>
+              <span class="chip chip-gold">PaliGemma</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">Computer Vision</span>
+            </div>
+            <a href="https://github.com/cherry-mittal/vlm_system"
+               class="btn-github" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /projects-featured -->
+
+      <!-- More GitHub projects -->
+      <div class="projects-more-label reveal">
+        <div class="more-rule"></div>
+        <span>More on GitHub</span>
+        <div class="more-rule"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-mini reveal">
+          <div class="project-mini-top">
+            <div class="project-mini-icon"><i class="fas fa-robot"></i></div>
+            <a href="https://github.com/cherry-mittal/Teaching-an-LLM-to-Count"
+               class="project-gh-icon" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          </div>
+          <h4>Teaching an LLM to Count</h4>
+          <p>Research into LLM arithmetic reasoning — probing how language models handle counting and numerical tasks through targeted fine-tuning.</p>
+          <div class="skill-chips"><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">LLMs</span></div>
+        </div>
+
+        <div class="project-mini reveal reveal-delay-1">
+          <div class="project-mini-top">
+            <div class="project-mini-icon"><i class="fas fa-music"></i></div>
+            <a href="https://github.com/cherry-mittal/music_recommender_system"
+               class="project-gh-icon" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          </div>
+          <h4>Music Recommender System</h4>
+          <p>ML-based recommendation engine using collaborative filtering and content-based approaches to surface personalised music suggestions.</p>
+          <div class="skill-chips"><span class="chip">Python</span><span class="chip">Scikit-learn</span><span class="chip">Pandas</span></div>
+        </div>
+
+        <div class="project-mini reveal reveal-delay-2">
+          <div class="project-mini-top">
+            <div class="project-mini-icon"><i class="fas fa-filter"></i></div>
+            <a href="https://github.com/cherry-mittal/spam-classifier"
+               class="project-gh-icon" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          </div>
+          <h4>Spam Classifier</h4>
+          <p>NLP text classification pipeline using TF-IDF features and ensemble ML models to detect and filter spam with high precision.</p>
+          <div class="skill-chips"><span class="chip">Python</span><span class="chip">NLP</span><span class="chip">Scikit-learn</span></div>
+        </div>
+
+        <div class="project-mini reveal reveal-delay-1">
+          <div class="project-mini-top">
+            <div class="project-mini-icon"><i class="fas fa-chart-bar"></i></div>
+            <a href="https://github.com/cherry-mittal/Titanic-Survival-Prediction"
+               class="project-gh-icon" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          </div>
+          <h4>Titanic Survival Prediction</h4>
+          <p>Binary classification with feature engineering, missing-data handling, and ensemble methods (Random Forest, XGBoost) for survival prediction.</p>
+          <div class="skill-chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">XGBoost</span></div>
+        </div>
+      </div><!-- /projects-grid -->
+
+      <div class="projects-cta reveal">
+        <a href="https://github.com/cherry-mittal" class="btn btn-secondary" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+          <span>View All Repositories</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CERTIFICATIONS (placeholder)
+  ═══════════════════════════════════════════ -->
+  <section id="certifications" style="min-height:10px"></section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="section-divider"><span></span></div>
+        <p class="section-subtext">Open to full-time AI/ML Engineering roles · Available for consulting</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info reveal">
+          <h3 class="contact-info-title">
+            Let's build something <span class="accent">great</span> together.
+          </h3>
+          <p class="contact-info-desc">
+            Whether you're hiring for an AI/ML role, have a project in mind, or just want to connect — I'd love to hear from you.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-detail-label">Email</span>
+                <a href="mailto:cherrymittal998@gmail.com" class="contact-detail-value">cherrymittal998@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-detail-label">Phone</span>
+                <a href="tel:3129725734" class="contact-detail-value">312-972-5734</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-detail-label">Location</span>
+                <span class="contact-detail-value">Chicago, IL · Open to Remote</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/cherry-mittal" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/cherry-mittal" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:cherrymittal998@gmail.com" class="social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <!-- Replace YOUR_FORM_ID after signing up free at formspree.io -->
+          <form class="contact-form" id="contact-form"
+                action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Your Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Jen Hua" required>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Your Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="jen@company.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="AI/ML Role at Acme Corp">
+            </div>
+            <div class="form-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5"
+                        placeholder="Hi Cherry, I came across your portfolio and…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-note"><i class="fas fa-lock"></i> Your message goes directly to Cherry's inbox.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="footer-logo">Cherry<span class="accent">.</span></a>
+        <p class="footer-copy">© 2026 Cherry Mittal · AI/ML Engineer &amp; LLM Specialist · Chicago, IL</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/cherry-mittal" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/cherry-mittal" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:cherrymittal998@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>

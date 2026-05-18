@@ -222,3 +222,46 @@ if (statsGridEl) {
   }, { threshold: 0.4 });
   counterObserver.observe(statsGridEl);
 }
+
+/* ───────────────────────────────────────
+   CONTACT FORM — async Formspree submit
+─────────────────────────────────────── */
+const contactForm = document.getElementById('contact-form');
+const submitBtn   = document.getElementById('form-submit-btn');
+
+if (contactForm && submitBtn) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const originalHTML = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Sending…</span><i class="fas fa-spinner fa-spin"></i>';
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method:  'POST',
+        body:    new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        submitBtn.innerHTML = '<span>Message Sent!</span><i class="fas fa-check"></i>';
+        submitBtn.style.background = '#2a7a4f';
+        submitBtn.style.borderColor = '#2a7a4f';
+        contactForm.reset();
+        setTimeout(() => {
+          submitBtn.innerHTML = originalHTML;
+          submitBtn.style.background = '';
+          submitBtn.style.borderColor = '';
+          submitBtn.disabled = false;
+        }, 4000);
+      } else {
+        throw new Error('Network response not ok');
+      }
+    } catch {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalHTML;
+      window.location.href = 'mailto:cherrymittal998@gmail.com';
+    }
+  });
+}
