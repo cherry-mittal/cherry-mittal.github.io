@@ -46,10 +46,10 @@ function highlightActiveSection() {
 ─────────────────────────────────────── */
 const roles = [
   'LLMs that understand context',
-  'GenAI applications at scale',
-  'intelligent NLP pipelines',
+  'agentic RAG pipelines',
+  'self-hosted LLM inference',
   'production ML systems',
-  'Agentic AI workflows',
+  'evaluation-driven AI systems',
 ];
 
 const typedEl = document.getElementById('typed-text');

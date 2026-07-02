@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cherry Mittal — AI/ML Engineer & LLM Specialist</title>
-  <meta name="description" content="Cherry Mittal is an AI/ML Engineer specializing in LLMs, Generative AI, NLP, and production-grade machine learning systems.">
-  <meta name="keywords" content="AI Engineer, ML Engineer, LLM, Generative AI, NLP, Machine Learning, Deep Learning, Python, PyTorch, Transformers">
+  <meta name="description" content="Cherry Mittal is an AI/ML Engineer specializing in agentic RAG systems, LangGraph workflows, self-hosted LLM serving (vLLM), and production-grade machine learning systems.">
+  <meta name="keywords" content="AI Engineer, ML Engineer, LLM, RAG, LangGraph, LangChain, vLLM, Agentic AI, Generative AI, NLP, Machine Learning, Deep Learning, Python, PyTorch, Transformers">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,7 +74,7 @@
 
         <p class="hero-description">
           Turning cutting-edge research into <span class="highlight">production AI systems</span> —
-          from fine-tuned LLMs to real-time inference pipelines.
+          from agentic RAG pipelines to self-hosted LLM inference.
           Passionate about building AI that <span class="highlight">actually ships</span>.
         </p>
 
@@ -83,7 +83,7 @@
             <span>View My Work</span>
             <i class="fas fa-arrow-right"></i>
           </a>
-          <a href="assets/Cherry_AI:ML_Engineer_Resume.pdf" class="btn btn-secondary" download="Cherry_Mittal_Resume.pdf">
+          <a href="assets/Cherry_AI_Engineer_Resume.pdf" class="btn btn-secondary" download="Cherry_Mittal_Resume.pdf">
             <i class="fas fa-download"></i>
             <span>Download Resume</span>
           </a>
@@ -173,22 +173,23 @@
 
           <div class="about-body">
             <p>
-              With <strong>6+ years building software</strong> and 3 years deep in
-              production AI/ML, I sit at the intersection of cutting-edge research
+              With <strong>6+ years building software</strong> and the last 4 years deep in
+              production LLM/ML systems, I sit at the intersection of cutting-edge research
               and real-world delivery. My journey into AI was ignited by a simple question:
               <em>what happens when language models actually ship?</em>
             </p>
             <p>
-              At Optum, I found the answer. I engineered <strong>CareVoice</strong> —
-              a real-time call intelligence system using Whisper STT + Llama-3 —
-              cutting post-call documentation time by <strong>40%</strong> for healthcare
-              agents handling thousands of calls a day. That's AI doing real work in a
-              high-stakes domain.
+              At Optum, I found the answer. I architected <strong>CareVoice</strong> —
+              an AI call-intelligence platform on AWS event-driven services with
+              self-hosted Llama-3 inference via vLLM — processing 10K+ customer calls a
+              month and cutting post-call documentation effort by <strong>40%</strong>.
+              That's AI doing real work in a high-stakes, PHI-sensitive domain.
             </p>
             <p>
-              Today I architect LLM-powered systems from first principles: fine-tuning
-              models with <strong>LoRA/PEFT</strong>, building Text-to-SQL engines with
-              LangChain, and shipping multimodal vision pipelines to production.
+              Today I architect agentic systems from first principles: fine-tuning
+              models with <strong>LoRA/QLoRA/PEFT</strong>, building schema-aware RAG and
+              Text-to-SQL engines with <strong>LangGraph</strong>, and backing every
+              pipeline with golden-dataset evaluation and guardrails before it ships.
               I don't just experiment — <strong>I deliver.</strong>
             </p>
           </div>
@@ -217,7 +218,7 @@
               <span>Let's Connect</span>
               <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="assets/Cherry_AI:ML_Engineer_Resume.pdf" class="btn btn-secondary" download="Cherry_Mittal_Resume.pdf">
+            <a href="assets/Cherry_AI_Engineer_Resume.pdf" class="btn btn-secondary" download="Cherry_Mittal_Resume.pdf">
               <i class="fas fa-download"></i>
               <span>Resume</span>
             </a>
@@ -236,7 +237,7 @@
             </div>
             <div class="stat-card">
               <div class="stat-value">
-                <span class="stat-num" data-target="3">0</span>
+                <span class="stat-num" data-target="4">0</span>
                 <span class="stat-suffix">+</span>
               </div>
               <span class="stat-label">Years in AI / ML</span>
@@ -264,23 +265,23 @@
             <ul class="highlights-list">
               <li>
                 <i class="fas fa-check"></i>
-                <span>Fine-tune LLMs (LoRA/PEFT) and ship to production</span>
+                <span>Fine-tune LLMs (LoRA/QLoRA/PEFT) and ship to production</span>
               </li>
               <li>
                 <i class="fas fa-check"></i>
-                <span>Architect RAG pipelines with Pinecone vector stores</span>
+                <span>Architect agentic RAG pipelines with LangGraph &amp; guardrails</span>
               </li>
               <li>
                 <i class="fas fa-check"></i>
-                <span>Optimize inference latency for 1,000+ concurrent users</span>
+                <span>Self-host LLM inference with vLLM for latency &amp; cost control</span>
               </li>
               <li>
                 <i class="fas fa-check"></i>
-                <span>Lead ML initiatives and mentor engineering teams</span>
+                <span>Build golden-dataset evaluation frameworks (Ragas, Recall@k)</span>
               </li>
               <li>
                 <i class="fas fa-check"></i>
-                <span>Deliver in high-stakes domains: healthcare &amp; insurance</span>
+                <span>Deliver in high-stakes domains: healthcare, PHI &amp; insurance</span>
               </li>
             </ul>
           </div>
@@ -306,25 +307,24 @@
         <div class="spec-card">
           <div class="spec-icon"><i class="fas fa-brain"></i></div>
           <h3>LLM &amp; Generative AI</h3>
-          <p>Fine-tuning GPT-4, Llama-3 &amp; BERT with LoRA/PEFT. Building RAG pipelines and agentic workflows at enterprise scale.</p>
+          <p>Fine-tuning GPT-4, Llama-3 &amp; BERT with LoRA/QLoRA/PEFT. Building agentic RAG pipelines and LangGraph workflows with human-in-the-loop guardrails.</p>
         </div>
         <div class="spec-card">
           <div class="spec-icon"><i class="fas fa-network-wired"></i></div>
           <h3>ML Engineering</h3>
-          <p>End-to-end pipelines with PyTorch, Hugging Face &amp; LangChain — from data preprocessing to model evaluation and optimization.</p>
+          <p>End-to-end pipelines with PyTorch, Hugging Face &amp; LangChain — from data preprocessing to golden-dataset evaluation (Ragas, Recall@k).</p>
         </div>
         <div class="spec-card">
           <div class="spec-icon"><i class="fas fa-rocket"></i></div>
           <h3>Production AI Systems</h3>
-          <p>Scalable inference APIs with FastAPI &amp; Docker, vector databases with Pinecone, and real-time serving for 1,000+ concurrent users.</p>
+          <p>Scalable inference APIs with FastAPI &amp; Docker, vector databases (Pinecone, pgvector), and cost/latency-optimized vLLM serving at scale.</p>
         </div>
       </div>
 
-      <!-- Skill category cards: 3-col top row + 2-col wider bottom row -->
+      <!-- Skill category cards: wide rows for dense categories + a regular row for smaller ones -->
       <div class="skill-categories">
 
-        <!-- Row 1 -->
-        <div class="skill-cat reveal">
+        <div class="skill-cat skill-cat-wide reveal">
           <div class="skill-cat-header">
             <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
             <h4>Generative AI &amp; LLMs</h4>
@@ -334,35 +334,105 @@
             <span class="chip chip-gold">Llama-3</span>
             <span class="chip chip-gold">BERT</span>
             <span class="chip chip-gold">RAG</span>
-            <span class="chip chip-gold">LoRA / PEFT</span>
-            <span class="chip chip-gold">Fine-tuning</span>
-            <span class="chip chip-gold">MCP</span>
-            <span class="chip">Whisper</span>
+            <span class="chip chip-gold">AI Agents</span>
+            <span class="chip chip-gold">Agentic Workflows</span>
             <span class="chip">PaliGemma</span>
+            <span class="chip">Structured Outputs</span>
+            <span class="chip">Claude API</span>
+            <span class="chip">Context Engineering</span>
             <span class="chip">Prompt Engineering</span>
           </div>
         </div>
 
-        <div class="skill-cat reveal reveal-delay-1">
+        <div class="skill-cat skill-cat-wide reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-diagram-project"></i></div>
+            <h4>Retrieval &amp; Vector Search</h4>
+          </div>
+          <div class="skill-chips">
+            <span class="chip chip-gold">RAG</span>
+            <span class="chip chip-gold">Semantic Search</span>
+            <span class="chip chip-gold">BGE-M3</span>
+            <span class="chip">Embeddings</span>
+            <span class="chip">Retrieval Optimization</span>
+            <span class="chip">Re-ranking</span>
+          </div>
+        </div>
+
+        <div class="skill-cat skill-cat-wide reveal">
           <div class="skill-cat-header">
             <div class="skill-cat-icon"><i class="fas fa-layer-group"></i></div>
-            <h4>ML Frameworks &amp; Libraries</h4>
+            <h4>Model Training</h4>
           </div>
           <div class="skill-chips">
             <span class="chip chip-gold">PyTorch</span>
             <span class="chip chip-gold">Hugging Face</span>
-            <span class="chip chip-gold">LangChain</span>
-            <span class="chip chip-gold">OpenAI SDK</span>
+            <span class="chip chip-gold">LoRA / QLoRA / PEFT</span>
+            <span class="chip chip-gold">Supervised Fine-Tuning</span>
             <span class="chip">TensorFlow</span>
             <span class="chip">Keras</span>
-            <span class="chip">Scikit-learn</span>
             <span class="chip">Transformers</span>
-            <span class="chip">NLTK</span>
             <span class="chip">ONNX</span>
           </div>
         </div>
 
-        <div class="skill-cat reveal reveal-delay-2">
+        <div class="skill-cat skill-cat-wide reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+            <h4>Evaluation &amp; Guardrails</h4>
+          </div>
+          <div class="skill-chips">
+            <span class="chip chip-gold">Golden Dataset Evaluation</span>
+            <span class="chip chip-gold">Recall@k</span>
+            <span class="chip chip-gold">Ragas</span>
+            <span class="chip">Prompt Injection Defense</span>
+            <span class="chip">PHI Redaction</span>
+            <span class="chip">Safety Guardrails</span>
+            <span class="chip">Hallucination Detection</span>
+            <span class="chip">A/B Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-cat skill-cat-wide reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-cloud"></i></div>
+            <h4>Cloud, MLOps &amp; Tools</h4>
+          </div>
+          <div class="skill-chips">
+            <span class="chip chip-gold">AWS SageMaker</span>
+            <span class="chip chip-gold">AWS Bedrock</span>
+            <span class="chip chip-gold">Azure</span>
+            <span class="chip chip-gold">FastAPI</span>
+            <span class="chip chip-gold">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">Vector DBs (Pinecone, pgvector, ChromaDB)</span>
+            <span class="chip">CI/CD (Jenkins, GitHub Actions)</span>
+            <span class="chip">REST / GraphQL APIs</span>
+            <span class="chip">Claude Code</span>
+            <span class="chip">Dynatrace</span>
+            <span class="chip">Salesforce Cloud</span>
+          </div>
+        </div>
+
+        <div class="skill-cat skill-cat-wide reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-flask"></i></div>
+            <h4>ML Concepts &amp; Algorithms</h4>
+          </div>
+          <div class="skill-chips">
+            <span class="chip chip-gold">NLP</span>
+            <span class="chip chip-gold">Deep Learning</span>
+            <span class="chip">Classification</span>
+            <span class="chip">Regression</span>
+            <span class="chip">CNNs</span>
+            <span class="chip">RNNs / LSTMs</span>
+            <span class="chip">Feature Engineering</span>
+            <span class="chip">Model Evaluation</span>
+          </div>
+        </div>
+
+        <!-- Row of smaller, focused categories -->
+        <div class="skill-cat reveal">
           <div class="skill-cat-header">
             <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
             <h4>Languages</h4>
@@ -377,42 +447,29 @@
           </div>
         </div>
 
-        <!-- Row 2 — two wider cards -->
-        <div class="skill-cat skill-cat-wide reveal">
+        <div class="skill-cat reveal reveal-delay-1">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon"><i class="fas fa-cloud"></i></div>
-            <h4>Cloud, MLOps &amp; Tools</h4>
+            <div class="skill-cat-icon"><i class="fas fa-code-branch"></i></div>
+            <h4>Agentic &amp; Orchestration</h4>
           </div>
           <div class="skill-chips">
-            <span class="chip chip-gold">Azure</span>
-            <span class="chip chip-gold">Docker</span>
-            <span class="chip chip-gold">FastAPI</span>
-            <span class="chip chip-gold">Pinecone</span>
-            <span class="chip chip-gold">AWS SageMaker</span>
-            <span class="chip">Kubernetes</span>
-            <span class="chip">Jenkins</span>
-            <span class="chip">REST APIs</span>
-            <span class="chip">GraphQL</span>
-            <span class="chip">GitHub</span>
-            <span class="chip">Salesforce</span>
+            <span class="chip chip-gold">LangGraph</span>
+            <span class="chip chip-gold">LangChain</span>
+            <span class="chip">Tool Calling</span>
+            <span class="chip">Human-in-the-Loop</span>
           </div>
         </div>
 
-        <div class="skill-cat skill-cat-wide reveal reveal-delay-1">
+        <div class="skill-cat reveal reveal-delay-2">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon"><i class="fas fa-flask"></i></div>
-            <h4>ML Concepts &amp; Algorithms</h4>
+            <div class="skill-cat-icon"><i class="fas fa-microchip"></i></div>
+            <h4>LLM Serving &amp; Inference</h4>
           </div>
           <div class="skill-chips">
-            <span class="chip chip-gold">NLP</span>
-            <span class="chip chip-gold">Computer Vision</span>
-            <span class="chip">Classification</span>
-            <span class="chip">CNNs</span>
-            <span class="chip">RNNs / LSTMs</span>
-            <span class="chip">Supervised Learning</span>
-            <span class="chip">Unsupervised Learning</span>
-            <span class="chip">Feature Engineering</span>
-            <span class="chip">Model Evaluation</span>
+            <span class="chip chip-gold">vLLM</span>
+            <span class="chip chip-gold">GPU Inference</span>
+            <span class="chip">PagedAttention</span>
+            <span class="chip">Latency / Cost Optimization</span>
           </div>
         </div>
 
@@ -441,7 +498,7 @@
           <div class="exp-card">
             <div class="exp-header">
               <div class="exp-title-row">
-                <h3 class="exp-role">AI / ML Consultant</h3>
+                <h3 class="exp-role">AI/ML Engineer</h3>
                 <span class="badge-now"><span class="badge-pulse"></span>Now</span>
                 <span class="exp-contract">Contract</span>
               </div>
@@ -459,19 +516,24 @@
                 <span class="featured-label"><i class="fas fa-star"></i> Featured Project</span>
                 <span class="featured-name">LLM-powered Text-to-SQL Intelligence Engine</span>
               </div>
-              <p class="featured-desc">-Architected an <strong>Natural Language Text-to-SQL engine</strong> using Python, LangChain &amp; PostgreSQL, automating complex data retrieval for 50+ users and cutting manual SQL reporting overhead by <span class="impact">50%</span>.</p>
+              <p class="featured-desc">Architected &amp; deployed to production an <strong>LLM-powered Text-to-SQL engine</strong> using Python, BGE-M3 &amp; PostgreSQL, automating complex data retrieval for 50+ users and slashing manual SQL reporting overhead by <span class="impact">~70%</span>.</p>
             </div>
             <ul class="exp-bullets">
-              <li>Engineered an automated analytics pipeline that converts natural language into validated SQL schemas, improving query accuracy and accelerating marketing &amp; sales insights by <span class="impact">30%</span>.</li>
+              <li>Designed a <strong>schema-aware RAG pipeline</strong> that embeds database metadata and retrieves only the top-K relevant tables per query, improving SQL generation accuracy by <span class="impact">30%</span> while reducing hallucinated joins.</li>
+              <li>Built an <strong>agentic self-correction loop with LangGraph</strong> — a stateful retrieval, generation, validation, execution graph with bounded retries that recovers failed queries.</li>
+              <li>Built a <strong>500-pair golden-dataset eval</strong> with execution-match scoring and Recall@k to regression-test every pipeline change.</li>
+              <li>Engineered multi-layer guardrails on the FastAPI layer: Pydantic input validation, SQL parsing, SELECT-only allowlist, identifier validation against retrieved schema, and a read-only PostgreSQL role with statement timeouts &amp; row limits as the hard safety boundary.</li>
             </ul>
 
             <div class="exp-tech">
-              <span class="chip chip-gold">LangChain</span>
-              <span class="chip chip-gold">Python</span>
+              <span class="chip chip-gold">LangGraph</span>
+              <span class="chip chip-gold">BGE-M3</span>
               <span class="chip chip-gold">PostgreSQL</span>
+              <span class="chip chip-gold">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">RAG</span>
               <span class="chip">Text-to-SQL</span>
-              <span class="chip">LLMs</span>
-              <span class="chip">NLP</span>
+              <span class="chip">Recall@k</span>
             </div>
           </div>
         </div>
@@ -499,27 +561,27 @@
             <div class="featured-project">
               <div class="featured-top">
                 <span class="featured-label"><i class="fas fa-star"></i> Featured Project</span>
-                <span class="featured-name">CareVoice — Real-time Call Intelligence Engine</span>
+                <span class="featured-name">CareVoice — AI Call Intelligence Platform</span>
               </div>
-              <p class="featured-desc">Engineered a real-time call intelligence system using <strong>Whisper STT + Llama-3</strong> to automate agent assistance and post-call summarization — cutting documentation time by <span class="impact">40%</span> across high-volume healthcare service centers.</p>
+              <p class="featured-desc">Architected <strong>CareVoice</strong>, a production AI call-intelligence platform processing <span class="impact">10K+</span> customer calls/month, leveraging AWS event-driven services (S3, SNS, SQS) and self-hosted <strong>Llama-3 inference via vLLM</strong> — reducing post-call documentation effort by <span class="impact">~40%</span>.</p>
             </div>
 
             <ul class="exp-bullets">
-              <li>Developed <strong>BERT-based sentiment analysis pipeline</strong>, delivering sub-second insights and improving customer satisfaction (CSAT) scores by <span class="impact">20%</span>.</li>
-              <li>Built a <strong>supervised ML classifier</strong> (Python / Scikit-learn) identifying high-risk insurance members, enabling targeted outreach for 10K+ users and reducing case resolution time by <span class="impact">55%</span>.</li>
-              <li>Re-engineered backend API from <strong>REST → GraphQL</strong>, eliminating over-fetching and slashing processing latency by <span class="impact">50%</span> for 1,000+ concurrent users.</li>
+              <li>Fine-tuned a <strong>BERT sentiment-analysis pipeline</strong> on 5K labeled customer utterances with class weighting for the minority escalating class and ONNX export for inference, delivering sub-second agent insights and improving CSAT by <span class="impact">~20%</span>.</li>
+              <li>Developed a <strong>supervised ML classifier</strong> (Python / Scikit-learn) identifying high-risk insurance members, enabling targeted outreach for 10K+ users and reducing case resolution time by <span class="impact">~55%</span>.</li>
+              <li>Directed a <strong>6-engineer team</strong> to launch a VIP insurance platform, achieving a <span class="impact">~40%</span> reduction in system latency.</li>
               <li>Mentored junior engineers, guided architecture decisions, and drove Agile sprint execution across ML &amp; AI initiatives.</li>
             </ul>
 
             <div class="exp-tech">
-              <span class="chip chip-gold">Whisper STT</span>
               <span class="chip chip-gold">Llama-3</span>
+              <span class="chip chip-gold">vLLM</span>
               <span class="chip chip-gold">BERT</span>
-              <span class="chip chip-gold">PyTorch</span>
+              <span class="chip chip-gold">AWS</span>
+              <span class="chip">PyTorch</span>
               <span class="chip">Scikit-learn</span>
               <span class="chip">Python</span>
-              <span class="chip">GraphQL</span>
-              <span class="chip">FastAPI</span>
+              <span class="chip">ONNX</span>
             </div>
           </div>
         </div>
@@ -545,15 +607,17 @@
 
             <ul class="exp-bullets">
               <li>Architected <strong>Salesforce LWC applications</strong> integrated with 30+ enterprise systems, enabling real-time bi-directional data flow for critical healthcare records.</li>
-              <li>Led a 6-engineer team to launch a VIP insurance platform, optimising data processing logic to achieve a <span class="impact">40%</span> reduction in system latency.</li>
-              <li>Implemented <strong>OIDC-based SSO</strong>, enabling secure access for 1,000+ users and improving login success rates by <span class="impact">20%</span>.</li>
+              <li>Re-engineered backend API architecture from <strong>REST to GraphQL</strong>, eliminating data over-fetching and slashing processing latency by <span class="impact">~50%</span> for 1,000+ concurrent users.</li>
+              <li>Owned production deployment, managing CI/CD release cycles and post-release stability for a high-traffic platform.</li>
+              <li>Implemented <strong>OIDC-based SSO</strong>, enabling secure access for 1,000+ users and improving login success rates by <span class="impact">~20%</span>.</li>
             </ul>
 
             <div class="exp-tech">
               <span class="chip chip-gold">Salesforce LWC</span>
+              <span class="chip chip-gold">GraphQL</span>
               <span class="chip">JavaScript</span>
               <span class="chip">OIDC / SSO</span>
-              <span class="chip">REST APIs</span>
+              <span class="chip">CI/CD</span>
               <span class="chip">Apex</span>
             </div>
           </div>
@@ -856,9 +920,67 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
-       CERTIFICATIONS (placeholder)
+       CERTIFICATIONS SECTION
   ═══════════════════════════════════════════ -->
-  <section id="certifications" style="min-height:10px"></section>
+  <section class="certifications section" id="certifications">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications &amp; <span class="accent">Recognition</span></h2>
+        <div class="section-divider"><span></span></div>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-info">
+            <h4>Generative AI Nanodegree</h4>
+            <span class="cert-issuer">Udacity</span>
+          </div>
+        </div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-info">
+            <h4>Certified Administrator</h4>
+            <span class="cert-issuer">Salesforce</span>
+          </div>
+        </div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-info">
+            <h4>Platform Developer I</h4>
+            <span class="cert-issuer">Salesforce</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-info">
+            <h4>App Builder</h4>
+            <span class="cert-issuer">Salesforce</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="awards-row reveal">
+        <div class="award-card">
+          <div class="award-icon"><i class="fas fa-award"></i></div>
+          <div class="award-info">
+            <h4>Spot Award</h4>
+            <span>Optum · 2022</span>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-icon"><i class="fas fa-gem"></i></div>
+          <div class="award-info">
+            <h4>Diamond Award</h4>
+            <span>Optum · 2023</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ═══════════════════════════════════════════
        CONTACT SECTION
